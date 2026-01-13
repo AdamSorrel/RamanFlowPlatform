@@ -1,0 +1,102 @@
+
+version		date		change log
+
+1.7.0		4/11/22		+ added "controller.connect.nd" a version of the connect that doesnt reset SS,SSZ,XD,YD,ZD
+						  needed in case a secondary application connects to the controller and destroys original settings
+						+ added "controller.z.steps-per-micron.get"
+						+ added "controller.stage.joyspeed.get"
+						+ added "controller.stage.joyspeed.set"
+						+ added "controller.z.joyspeed.get"
+						+ added "controller.z.joyspeed.set"
+						+ WASLV2 updated to also handle rev P (W5427) PS3 control boards
+						+ SL160 fixed sensor update bug for tray on stage signal during initilisation when using revP boards. 
+
+1.6.2		11/10/22	+ Handle situation where one axis host direction is reversed and "stage.ss.get" would respond
+						with a form "-25,25". Make into single absolute value response. NOTE We dont allow seperate scaling per XY axis.
+						+ "controller.stage.hostdirection.set" should ony be used after "stage.ss.set"					
+						+ Check OEM fitted status and encoder resolutions for SL160 loader axes during Connect()
+						+ added alternative "controller.connect.nd" which connects to controller without reseting stage
+						  and Z resolutions and directions to default values used by standard "controller.connect"
+
+1.6.1		6/12/21		Fixed bug in ES11 handling for FOURTH axis during Connect that could cause a comms lockup
+
+1.6.0		9/8/21		Support for reworked SL160 calibration. Needs PS3 1.14
+						(NOTE if you have pre-production SL160 unit or WASLV2 then please contact Prior Sales
+						before upgrading PS3 controller to 1.14)
+						fixed bug in encoders checking when using old ES10ZE controller
+						Added Prior Scientific EULA.pdf to Docs folder
+						Previous photo images in SL160_LoaderDemo.exe replaced by CAD captured images.
+
+1.5.0		14/7/21		AddingAPI for:
+						OEM current settings
+						OEM encoder resolution 
+						OEM VDR control
+						Needs PS3 v1.13
+
+1.4.2		14/5/21		fixed small timing window in command parsing that potentially 
+						could result in wrong command being executed.
+
+1.4.1		9/4/21		minor mods to WASLV2 for setting hotel fitted state
+						added get properties for stage host/joy direction
+						added shutter.state.get 
+						fixed bug in shutter.close
+
+1.4.0		5/3/21		Adding API for:
+						stage/z encoder/servo 
+						stage/z move-relative
+						stage correction and skew 
+						drive current (all axes) 
+						stage SetReference
+						Zplane
+						z joystick on/off
+						Theta rotary device
+						Wafer shuttle
+						Nose piece
+
+1.3.1		1/2/21		save serial number to stage eeprom for SL160 and WASLV2. Requires PS3 1.12 controller firmware
+
+1.3.0		28/1/21		adding backlash for stage/Z
+ 
+1.2.1		4/1/21		SL160 - adding 	SL160_LOADER_HOTELEJECTED status.
+						WASLV2 - adding WASLV2_LOADER_HOTELEJECTED status.
+						Adding live polling of the hotel switches when at ejected position
+
+1.2.0		7/12/20		Adding WASLV2 loader API
+
+1.1.4		26/11/20	all other prototypes have encoded HSM/HLM/STM axes
+
+1.1.3		20/10/20	for the first prototype units the HSM and HLM axes have 500 line encoders fitted.
+						can now scan all 20 apartments after mechanical changes to HLM
+1.1.2		18/9/20		fixing bug in comms handling for Sl160 if comms link is removed.
+
+1.1.1		11/9/20		fixed bug in preprocessing leds when no led_md board fitted.
+
+1.1.0		7/9/20		SL160 commands public
+						Adding controller TTL commands
+						Adding controller LED commands
+						Adding controller OEM commands
+						Adding	controller.stop.smoothly
+								controller.stop.abruptly
+								controller.restore.defaults
+								controller.firmware.version.get
+								controller.serialnumber.get
+								controller.flag.get/set
+
+1.0.4		9/7/20		Adding controller filter commands
+
+1.0.3		8/7/20		Added 
+						controller.z.move-at-velocity
+						dll.log.on
+						dll.log.off
+						dll.log.path
+						dll.apitest
+
+						log only logs controller API calls at the present. loader classes to follow
+
+1.0.2		23/6/20		Adding initial SL160 commands (not public yet)
+						minor bug fixes to remove extraneous \r in controller responses
+
+1.0.1		2/6/20		controller.stage.position.goto now controller.stage.goto-position
+
+1.0.0		2/6/20		initial version
+

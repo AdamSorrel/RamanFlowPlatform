@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>954</width>
+    <height>702</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MainWindow{
+	background-color:  #171D20;
+	/*background-color:  #040f13;*/
+}
+
+QWidget{
+	background: #1E2529;
+	/*background-color:  #171D20;*/
+	border: 0px;
+	padding: 0px;
+	color: #ffffff;
+	border-radius: 5px;
+}
+/*
+QPushButton{}
+*{
+	border-style: none;
+	background-color: #1E2529;
+	padding: 10px;
+	background: #FF0000;
+	border-radius: 5px;
+   /*somehow this controls the color of text in the top and bottom widget. I have no idea how.*/
+	/*color: #ffffff;
+}*/
+
+QPushButton{
+	border-style: none;
+	/* background-color: transparent; */
+	background-color: #1E2529;
+	padding: 10px;
+	/* background: #1E2529;*/
+	background: #1E2529;
+	border-radius: 5px;
+   /*somehow this controls the color of text in the top and bottom widget. I have no idea how.*/
+	color: #ffffff;
+}
+
+QPushButton::hover{
+	border-style: none;
+	/* background-color: transparent; */
+	background-color: #1E2529;
+	padding: 10px;
+	/* background: #1E2529;*/
+	background: #2F3133;
+	border-radius: 5px;
+   /*somehow this controls the color of text in the top and bottom widget. I have no idea how.*/
+	color: #ffffff;
+}
+
+QMdiSubWindow{							
+	/*background-color: #2F3133;*/
+	background-color: #1E2529;
+	border-style: solid;
+	/*border: 5px;*/
+	/*border-top: -20px;*/
+	/*margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;*/
+	/*padding-top: -20px;*/
+  	/*padding-right: 3px;*/
+  	/*padding-bottom: 3px;*/
+  	/*padding-left: 3px;*/
+}
+
+QTabWidget {
+	/* This determines the color behind the QWidget in the MDA tab. Mostly visible through rounded corners.*/
+	background-color: #1E2529;
+	background: #1E2529;
+	/*border: 5px #FF0000;
+	margin: 5px #FF0000;*/
+}
+
+QTabWidget::pane {
+	/*background-color: #1E2529;
+	background: #1E2529;
+	border: 5px #1E2529;
+	border: 5px #00ff00;
+	margin: 5px;*/
+}	
+
+QTabBar {
+	background-color: #1E2529;
+	width: 100%; 
+}
+
+QTabBar::tab {
+        /*background: #1E2529;*/
+		background: #171D20;
+        padding: 10px;
+        /*border-top-radius: 10px;*/
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		/*border: 5px #1E2529;*/
+    }
+
+QTabBar::tab:selected {
+        /*background: #2F3133;*/
+		background: #1E2529;
+       	/*border-top-radius: 10px;*/
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+    }
+
+QTableWidget{
+	border: 0px solid;
+	background-color: #2F3133;
+	/*padding: 10px;*/
+	/*background-color: #040f13;*/
+	border-radius: 5px;
+	color: #2F3133;				/* Text color */
+}
+
+/* Horizontal header in QTableWidget */
+QHeaderView::section:horizontal {
+	background-color: #2F3133;	/* Background color */
+	color: white;               				/* Text color */
+}
+/* Vertical header in QTableWidget*/
+QHeaderView::section:vertical {
+	background-color: #2F3133;	/* Background color */
+	color: white;               				/* Text color */
+}
+
+/* Corner button in QTableWidget */
+QTableCornerButton::section {
+    background-color: #2F3133;  /* Background color */
+   /* border: 1px solid #dcdcdc;*/  /* Border */
+}
+
+QMdiArea{										
+	/*qproperty-background: transparent;	*/
+    /*qproperty-background: #171D20;*/
+	qproperty-background: #1E2529;
+	/*border-radius: 10px;*/
+	/*	color: #171D20;	*/
+	background-color:  #1E2529;
+	/*background-color: #040f13;*/
+	/*border-radius: 20px;*/
+	/*border-radius: 5px;*/
+}
+QLineEdit{
+	background-color: #2F3133;
+}
+QSpinBox{
+	background-color: #2F3133;
+}
+QDoubleSpinBox{
+	background-color: #2F3133;
+}
+QComboBox{
+	background-color: #2F3133;
+}
+
+/*
+#leftBarWidget{
+	background-color: #171D20;
+	border-radius: 10px;
+}*/
+
+#mainWidget{
+    background-color: #171D20;
+	/*background-color:  #221f1f;*/
+	/*background-color: #040f13;*/
+	border-radius: 20px;
+	color: #ffffff;
+	padding-left: 5px;
+	margin-left: 5px;
+}
+
+#letfIconSet{
+	background-color: #171D20;
+	/*background-color: #071e26;*/
+	border-radius: 10px;
+}
+#mainSection{
+	background-color: #171D20;
+	/*background-color: #071e26;*/
+	border-radius: 10px;
+}
+#rightBar{
+	background-color: #171D20;
+	/*background-color: #071e26;*/
+	border-radius: 10px;
+}
+#rightIconSet{
+	background-color: #1E2529;
+	/*background-color: #071e26;*/
+	border-radius: 10px;
+}
+#topWidget{
+	background-color: #1E2529;
+	border-radius: 10px;
+}
+#bottomWidget{
+	background-color: #1E2529;
+	/*background-color: #071e26;*/
+	border-radius: 10px;
+}
+#leftBarWidget{
+	background-color: #1E2529;
+	/*background-color: #071e26;*/
+	border-radius: 10px;
+}
+#middleWidget{
+	background-color: #1E2529;
+	border-radius: 10px;
+}
+#leftWidget{
+/* This widget is actually mimicking background for the two left side widgets that are loaded into it*/
+	background-color: #171D20;
+	border-radius: 10px;
+}
+#rightWidget{
+	background-color: #1E2529;
+	border-radius: 10px;
+}
+#centerWidget{
+	background-color: #171D20;
+	border-radius: 10px;
+	margin: 5px;
+}
+/*
+#tab{
+	background: #FF0000;
+}
+
+#tabLayouy{
+	background: #FF0000;
+}
+
+#tabContainer{
+	background: #FF0000;
+}
+mainPlotSubWindow{
+	background: #FF0000;
+}*/</string>
+  </property>
+  <widget class="QWidget" name="mainWidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item alignment="Qt::AlignTop">
+     <widget class="QWidget" name="topWidget" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Top widget</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="centerWidget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="leftWidget" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="middleWidget" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="middleWidgetMainFrame">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QMdiArea" name="mainCanvasMdi">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <widget class="QWidget" name="subwindow">
+                <property name="windowTitle">
+                 <string>Undervindue</string>
+                </property>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="rightWidget" native="true"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignBottom">
+     <widget class="QWidget" name="bottomWidget" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <property name="leftMargin">
+        <number>10</number>
+       </property>
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="rightMargin">
+        <number>10</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="tileMdiAreaBtn">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="icons.qrc">
+           <normaloff>:/icons/feather/grid.svg</normaloff>:/icons/feather/grid.svg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="startBtn">
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Start acquisition</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QProgressBar" name="acquisitionProgressBar">
+           <property name="value">
+            <number>0</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="exposureBox">
+         <property name="leftMargin">
+          <number>20</number>
+         </property>
+         <property name="rightMargin">
+          <number>20</number>
+         </property>
+         <property name="bottomMargin">
+          <number>20</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Exposure </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QGridLayout" name="exposureGrid">
+           <item row="0" column="1">
+            <widget class="QDoubleSpinBox" name="exposureValue">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="locale">
+              <locale language="English" country="UnitedStates"/>
+             </property>
+             <property name="minimum">
+              <double>0.010000000000000</double>
+             </property>
+             <property name="maximum">
+              <double>99.000000000000000</double>
+             </property>
+             <property name="singleStep">
+              <double>0.010000000000000</double>
+             </property>
+             <property name="value">
+              <double>1.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="exposureLabel">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Set [s]</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>358</width>
+    <height>681</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>200</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MainWindow{
+	background-color:  #040f13;
+}
+/*background-color: rgb(43, 43, 43);*/
+
+QPushButton{}
+*{
+	border: none;
+	background-color: transparent;
+	color: #ffffff;
+}
+#mainFrameSidebar{
+	background-color: #071e26;
+	border-radius: 10px;
+}
+QPushButton{
+	/*border: 1px solid rgb(89, 89, 89); */
+	background-color: #071e26;
+	padding: 10px;
+	/*background-color: #040f13;*/
+	border-radius: 5px;
+}
+#sidebarVBox{
+	background-color: #071e26;
+	border-radius: 10px;
+}
+#letfIconSet{
+	background-color: #071e26;
+	border-radius: 10px;
+}
+#mainSection{
+	background-color: #071e26;
+	border-radius: 10px;
+}
+#rightBar{
+	background-color: #071e26;
+	border-radius: 10px;
+}
+#rightIconSet{
+	background-color: #071e26;
+	border-radius: 10px;
+}
+#topWidget{
+	background-color: #071e26;
+	border-radius: 10px;
+}
+#bottomWidget{
+	background-color: #071e26;
+	border-radius: 10px;
+}</string>
+  </property>
+  <widget class="QFrame" name="mainFrameSidebar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>200</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>191</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="sidebarVBox" stretch="0,0,0,0,0,0,0,0">
+     <item>
+      <widget class="QLabel" name="InitializeStatusLabel">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Initialize status</string>
+       </property>
+       <property name="margin">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="detectorTempretureGBox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="title">
+        <string>Detector temperature</string>
+       </property>
+       <widget class="QWidget" name="verticalLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>19</y>
+          <width>171</width>
+          <height>53</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="temperatureVBox">
+         <item>
+          <layout class="QHBoxLayout" name="temperatureLabelHBox">
+           <item>
+            <widget class="QLabel" name="setTemperatureLabel">
+             <property name="text">
+              <string>Set</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="currentTemperatureLabel">
+             <property name="text">
+              <string>Current</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="temperatureValuesHBox">
+           <item>
+            <widget class="QSpinBox" name="setTemperature">
+             <property name="minimum">
+              <number>-90</number>
+             </property>
+             <property name="maximum">
+              <number>30</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="currentTemperature">
+             <property name="text">
+              <string>20 °C</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="acquisitionModeGBox">
+       <property name="title">
+        <string>Acquisition mode</string>
+       </property>
+       <widget class="QComboBox" name="acquisitionModeCBox">
+        <property name="geometry">
+         <rect>
+          <x>5</x>
+          <y>20</y>
+          <width>171</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Single scan</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Accumulate</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Kinetics</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Fast kinetics</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Run till abort</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="readModeGBox">
+       <property name="title">
+        <string>Read mode</string>
+       </property>
+       <widget class="QComboBox" name="readModeCBox">
+        <property name="geometry">
+         <rect>
+          <x>5</x>
+          <y>20</y>
+          <width>171</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Image</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Single track</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Multi track</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Full vertical binning</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Random track</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="triggerModeGBox">
+       <property name="title">
+        <string>Trigger mode</string>
+       </property>
+       <widget class="QComboBox" name="triggerModeCBox">
+        <property name="geometry">
+         <rect>
+          <x>5</x>
+          <y>20</y>
+          <width>171</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Internal</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>External</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>External start</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>External exposure bulb</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>External FVB EM</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Software trigger</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>External charge shifting</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="exposureGBox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>176</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="title">
+        <string>Exposure and acquisition time</string>
+       </property>
+       <widget class="QWidget" name="verticalLayoutWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>19</y>
+          <width>171</width>
+          <height>184</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="exposureAcquisitionVBox">
+         <item>
+          <layout class="QVBoxLayout" name="exposureVBox">
+           <item>
+            <layout class="QHBoxLayout" name="ExposureTimeHBox">
+             <item>
+              <widget class="QLabel" name="exposureTimeLabel">
+               <property name="text">
+                <string>Exposure time</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="exposureTime">
+               <property name="locale">
+                <locale language="English" country="UnitedStates"/>
+               </property>
+               <property name="stepType">
+                <enum>QAbstractSpinBox::AdaptiveDecimalStepType</enum>
+               </property>
+               <property name="value">
+                <double>1.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="acquisitionTimingsGBox">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>80</height>
+            </size>
+           </property>
+           <property name="title">
+            <string>Acquisition timings</string>
+           </property>
+           <widget class="QWidget" name="gridLayoutWidget">
+            <property name="geometry">
+             <rect>
+              <x>8</x>
+              <y>15</y>
+              <width>159</width>
+              <height>71</height>
+             </rect>
+            </property>
+            <layout class="QGridLayout" name="AcquisitionTimingsHBox">
+             <item row="0" column="0">
+              <widget class="QLabel" name="exposureLabel">
+               <property name="font">
+                <font>
+                 <pointsize>8</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Exposure</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="kineticsLabel">
+               <property name="font">
+                <font>
+                 <pointsize>8</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Kinetics</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="accumulateLabel">
+               <property name="font">
+                <font>
+                 <pointsize>8</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Accumulate</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="exposureValue">
+               <property name="text">
+                <string>0 s</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLabel" name="accumulateValue">
+               <property name="text">
+                <string>0 s</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QLabel" name="kineticsValue">
+               <property name="text">
+                <string>0 s</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="acquireSpectumBtn">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Start</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="shutDownBtn">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Shut down</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

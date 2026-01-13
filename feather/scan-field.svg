@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   fill="none"
+   stroke="currentColor"
+   stroke-width="2"
+   stroke-linecap="round"
+   stroke-linejoin="round"
+   class="feather feather-git-branch"
+   version="1.1"
+   id="svg1775"
+   sodipodi:docname="scan-field.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1779" />
+  <sodipodi:namedview
+     id="namedview1777"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="22.627417"
+     inkscape:cx="3.9553785"
+     inkscape:cy="11.799844"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1775"
+     showguides="true">
+    <sodipodi:guide
+       position="22,18.236559"
+       orientation="1,0"
+       id="guide1981"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="5.90681,2"
+       orientation="0,-1"
+       id="guide1983"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="17.949821,10"
+       orientation="0,-1"
+       id="guide2007"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="22,10"
+       orientation="0.70710678,-0.70710678"
+       id="guide2009"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="22,2"
+       orientation="-0.70710678,-0.70710678"
+       id="guide2011"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="18,6"
+       orientation="0,-1"
+       id="guide2013"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="5.9928315,22"
+       orientation="0,-1"
+       id="guide2600"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="18,6"
+       orientation="1,0"
+       id="guide2615"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="22,10"
+       orientation="-0.70710678,-0.70710678"
+       id="guide2617"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="22,22"
+       orientation="0.70710678,-0.70710678"
+       id="guide2619"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="16,16"
+       orientation="0,-1"
+       id="guide2621"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <g
+     id="g2630"
+     transform="rotate(90,12,12)"
+     style="stroke:#e5e5e5;stroke-opacity:1">
+    <line
+       x1="6"
+       y1="3"
+       x2="6"
+       y2="15"
+       id="line1767"
+       style="stroke:#e5e5e5;stroke-opacity:1" />
+    <line
+       x1="14.63822"
+       y1="18"
+       x2="9.3617802"
+       y2="18"
+       id="line1767-2"
+       style="stroke-width:2;stroke-dasharray:none;stroke:#e5e5e5;stroke-opacity:1" />
+    <line
+       x1="18"
+       y1="12.204973"
+       x2="18"
+       y2="14.557589"
+       id="line1767-2-2"
+       style="stroke-width:2;stroke-dasharray:none;stroke:#e5e5e5;stroke-opacity:1" />
+    <line
+       x1="18"
+       y1="3.0022359"
+       x2="18"
+       y2="4.8311892"
+       id="line1767-2-2-2"
+       style="stroke-width:2;stroke-dasharray:none;stroke:#e5e5e5;stroke-opacity:1" />
+    <circle
+       cx="18"
+       cy="8.3535538"
+       r="3"
+       id="circle1769"
+       style="stroke:#e5e5e5;stroke-opacity:1" />
+    <circle
+       cx="6"
+       cy="18"
+       r="3"
+       id="circle1771"
+       style="stroke:#e5e5e5;stroke-opacity:1" />
+    <circle
+       cx="18"
+       cy="18"
+       r="3"
+       id="circle1771-5"
+       style="stroke:#e5e5e5;stroke-opacity:1" />
+  </g>
+</svg>
