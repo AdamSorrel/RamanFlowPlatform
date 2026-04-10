@@ -1,4 +1,4 @@
-# RACS Raman assisted cell/cluster sorting
+# Raman flow atutomation platform
 
 This is a user interface and an automation platform combining Andor spectrograph and camera with a number of peripherals including a data acquisition card (DAQ) a shutter a Fluidgent pressure driven flow controller and a microscope stage. 
 
