@@ -246,12 +246,13 @@ class daqThread(QThread):
         }
         """
 
-        self.parent.daqSettings.daqChannel1CBox.currentIndexChanged.connect(self.assignChannels)
-        self.parent.daqSettings.daqChannel2CBox.currentIndexChanged.connect(self.assignChannels)
-        self.parent.daqSettings.daqChannel3CBox.currentIndexChanged.connect(self.assignChannels)
+        #self.parent.daqSettings.daqChannel1CBox.currentIndexChanged.connect(self.assignChannels)
+        #self.parent.daqSettings.daqChannel2CBox.currentIndexChanged.connect(self.assignChannels)
+        #self.parent.daqSettings.daqChannel3CBox.currentIndexChanged.connect(self.assignChannels)
         
-        self.assignChannels()  
-
+        #self.assignChannels()  
+        self.channels = ["Channel 1", "Channel 2", "Channel 3"]
+    """
     def assignChannels(self):
         self.channels = []
         if self.parent.daqSettings.daqChannel1CBox.currentText() != "Inactive":
@@ -261,7 +262,10 @@ class daqThread(QThread):
             self.channels.append(self.parent.daqSettings.daqChannel2CBox.currentText())
 
         if self.parent.daqSettings.daqChannel3CBox.currentText() != "Inactive":
-            self.channels.append(self.parent.daqSettings.daqChannel3CBox.currentText())
+            self.channels.append(self.parent.daqSettings.daqChannel3CBox.currentText())"
+
+    """
+        
 
     def catchError(self):
         # This function is called when the daqVelocityProcess exits with an error in order to catch that error
@@ -743,10 +747,11 @@ class daqThread(QThread):
         time.sleep(0.1)            
 
 class loadDaqSidebar(QWidget):
-    def __init__(self, acquisitionQ, daqSettings, mainCanvasMdi, sdk, plotQ):
+    #def __init__(self, acquisitionQ, daqSettings, mainCanvasMdi, sdk, plotQ):
+    def __init__(self, acquisitionQ, mainCanvasMdi, sdk, plotQ):
         super().__init__()
         self.acqiusitionQ = acquisitionQ
-        self.daqSettings = daqSettings
+        #self.daqSettings = daqSettings
         self.mainCanvasMdi = mainCanvasMdi
         self.sdk = sdk
         self.plotQ = plotQ
@@ -834,15 +839,17 @@ class loadDaqSidebar(QWidget):
             self.peakQ.put({"Database size":self.setDatasetSizeSpinBox.value()})
         
     def runDaqThread(self):
+        # Hardcoded as 3 channels. This selection should be made on the side of RPi
+        self.nDaqChannels = 3
 
-        self.nDaqChannels = 0
-
+        """
         if self.daqSettings.daqChannel1CBox.currentText() != "Inactive":
             self.nDaqChannels += 1
         if self.daqSettings.daqChannel2CBox.currentText() != "Inactive":
             self.nDaqChannels += 1
         if self.daqSettings.daqChannel3CBox.currentText() != "Inactive":
             self.nDaqChannels += 1    
+        """
 
         print(f"############################################################################")
         print(f"[daqCanvas] Number of channels: {self.nDaqChannels}")

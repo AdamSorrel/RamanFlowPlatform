@@ -116,11 +116,11 @@ class loadSidePanel(QWidget):
         
         scanWidgetNum = self.leftStackedWidget.addWidget(self.scanSidebar)
 
-        self.daqSettings = loadDaqSettings()
-        daqSettingstNum = self.leftStackedWidget.addWidget(self.daqSettings)
+        #self.daqSettings = loadDaqSettings()
+        #daqSettingstNum = self.leftStackedWidget.addWidget(self.daqSettings)
 
         self.daqSidebar = loadDaqSidebar(acquisitionQ=self.acquisitionQ, 
-                                         daqSettings = self.daqSettings,
+                                         #daqSettings = self.daqSettings,
                                          mainCanvasMdi=self.mainCanvasMdi,
                                          sdk = self.sdk,
                                          plotQ = self.plotQ)
@@ -143,7 +143,7 @@ class loadSidePanel(QWidget):
         self.stageMovementBtn.clicked.connect(lambda: self.menuBtnClicked(stageWidgetNum))
         self.scanSettingsBtn.clicked.connect(lambda: self.menuBtnClicked(scanWidgetNum))
         self.daqSidebarBtn.clicked.connect(lambda: self.menuBtnClicked(daqSidebarNum, width=300))
-        self.daqSettingsBtn.clicked.connect(lambda: self.menuBtnClicked(daqSettingstNum))
+        #self.daqSettingsBtn.clicked.connect(lambda: self.menuBtnClicked(daqSettingstNum))
         #self.plotSettingsBtn.clicked.connect(lambda: self.menuBtnClicked(plotSettingsNum))
         self.fluigentSettingsBtn.clicked.connect(lambda: self.menuBtnClicked(fluigentSettingsNum))
         self.leftFrame.mouseReleaseEvent=self.menuBtnClicked

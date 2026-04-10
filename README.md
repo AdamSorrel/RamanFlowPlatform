@@ -1,5 +1,9 @@
 # RACS Raman assisted cell/cluster sorting
 
+This is a user interface and an automation platform combining Andor spectrograph and camera with a number of peripherals including a data acquisition card (DAQ) a shutter a Fluidgent pressure driven flow controller and a microscope stage. 
+
+![Example UI](exampleUI.png)
+
 ## Install git in Anaconda
 To acess and overwrite your branch in the git repository, you should installa git first. It is a command line program that you can install into your development environment in your computer using the command
 ```bash
