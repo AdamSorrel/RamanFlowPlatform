@@ -11,7 +11,7 @@ conda install -c anaconda git
 ```
 
 ## Basic git functioning (TLDR)
-In a nutshell and in my understanding, in the git environment, you can create a clone of the main environment to work on. This clone is called a branch. This is your version of the code to play with and do whatever you want. You can also have multiple branches if it helps your workflow. Once you have developed a new feature in your branch and it has been tested, you can merge your branch to the main version of the program, thus updating it. This merging should be done in a controlled manner and probably only once in a while after we meet and all agree on it. 
+In a nutshell, in the git environment, you can create a clone of the main environment to work on. This clone is called a branch. This is your version of the code to play with and do whatever you want. You can also have multiple branches if it helps your workflow. Once you have developed a new feature in your branch and it has been tested, you can merge your branch to the main version of the program, thus updating it. This merging should be done in a controlled manner and probably only once in a while after we meet and all agree on it. 
 
 When you will have installed git in your anacodna environment, you will download the repository using a link in this website. Then you will get all the files in your computer and you can edit them whichever way you prefer. When you will have made some new addition, you can upload it back, I think this process is called commiting. At that point, you should create your own branch and upload to it. When uploading, you will be asked to add a commit message, which is supposed to describe what you have done. This is useful for you and for the rest of the team. 
 
